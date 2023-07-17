@@ -1,0 +1,31 @@
+
+/*
+ * A positive integer that needs to be determined if it can be expressed as a power of square number.
+ *
+ * */
+
+#include <stdio.h>
+
+int Check_Power(unsigned int num);
+
+int main(void)
+{
+	unsigned int  number;
+	printf("enter number\n");
+	fflush(stdout);
+	scanf("%x",&number);
+	printf("Number of Ones = %d\n",Count_Ones(number));
+
+	return 0;
+}
+
+int Count_Ones(unsigned int num)
+{
+	while(num > 1)
+	{
+		num
+	}
+
+
+	return counter;
+}

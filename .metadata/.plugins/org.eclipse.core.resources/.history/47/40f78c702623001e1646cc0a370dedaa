@@ -1,0 +1,39 @@
+/*
+ * Write C Function that converts the any letter from lower-case to upper-case.
+ *
+ * */
+
+#include <stdio.h>
+
+#define TRUE	1
+#define FALSE	0
+
+void Convert_Lower_to_Upper(char letter);
+
+int main(void)
+{
+	char letter,convert;
+	printf("enter letter\n");
+	fflush(stdout);
+	scanf("%c",&letter);
+	convert = Convert_Lower_to_Upper(letter);
+	printf("%c letter after convert",letter);
+
+	return 0;
+}
+
+void Convert_Lower_to_Upper(char letter)
+{
+	char alpha;
+	if(letter >= 'a' && letter <= 'z')
+		alpha = letter - 32;
+	else if(letter >= 'A' && letter <= 'Z')
+		alpha = letter;
+	else
+		alpha = FALSE;
+
+	return alpha;
+
+
+
+}

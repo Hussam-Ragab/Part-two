@@ -1,0 +1,42 @@
+/*
+ * Write a C function that returns 1 if the input number is a power of 2 and return 0 if the input number is not power of 2.
+	For example: 1, 2 and 16 are power of 2.
+ 	 	 	 	 0, 10 and 30 are not power of 2.
+ *
+ * */
+
+#include <stdio.h>
+
+int Check_Power2(int num);
+
+int main(void)
+{
+	int number;
+	printf("enter number\n");
+	fflush(stdout);
+	scanf("%d",&number);
+	Check_Power2(number);
+
+	return 0;
+}
+
+int Check_Power2(int num)
+{
+	int flag = 0;
+	while(num != 0)
+	{
+		if(num%2 != 0)
+		{
+			flag = 1;
+			break;
+		}
+		num = num/2;
+	}
+	if(flag == 1)
+		return 0;
+	else
+		return 1;
+
+
+
+}

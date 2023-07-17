@@ -1,0 +1,20 @@
+/*
+ * Write a C Function that swaps the value of two integer numbers.
+ *
+ * */
+
+#include <stdio.h>
+
+void Swap(int num1,int num2);
+
+int number1,number2;
+
+int main(void)
+{
+	printf("enter two numbers\n");
+	fflush(stdout);
+	scanf("%d%d",&number1,&number2);
+	Display_Prime_Between_Interval(Start,End);
+
+	return 0;
+}

@@ -1,0 +1,23 @@
+
+/*
+ *  Write a C Function that takes one character and checks if it alphabet or not.
+ *
+ * */
+
+#include <stdio.h>
+#define FALSE 0
+#define TRUE  1
+
+int Check_Alphabet(char Charachter);
+
+
+int main(void)
+{
+	int number;
+	printf("enter number\n");
+	fflush(stdout);
+	scanf("%d",&number);
+	Print_Cube(number);
+
+	return 0;
+}

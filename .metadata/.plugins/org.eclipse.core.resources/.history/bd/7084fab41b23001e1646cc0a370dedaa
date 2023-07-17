@@ -1,0 +1,38 @@
+
+/*
+ * Write a C Function that return the addition or subtraction or multiplication or division for two numbers.
+   The function should take the required operation and two numbers as arguments. It also should check
+	that the input operation is one of those operation that mentioned before and if not it should return error.
+	The function should be implemented using switch case.
+ *
+ * */
+
+#include <stdio.h>
+
+void Check_Polarity(int num);
+
+
+int main(void)
+{
+	int number;
+	printf("enter number\n");
+	fflush(stdout);
+	scanf("%d",&number);
+	Check_Polarity(number);
+
+	return 0;
+}
+
+
+void Check_Polarity(int num)
+{
+	if(num > 0)
+		printf("number %d is Positive\n",num);
+	else if(num < 0)
+		printf("number %d is Negative\n",num);
+	else
+		printf("number is Zero");
+
+}
+
+

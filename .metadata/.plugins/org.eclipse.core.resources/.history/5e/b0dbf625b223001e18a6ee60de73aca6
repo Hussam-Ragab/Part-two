@@ -1,0 +1,54 @@
+/*
+ *  Write a C Function that display Prime Numbers between Intervals (two numbers) by Making Function.
+ *
+ * */
+
+#include <stdio.h>
+#define TRUE	 1
+#define FALSE 	 0
+void Display_Prime_Between_Interval(int Start,int End);
+
+int main(void)
+{
+	int Start,End;
+	printf("enter Intervals\n");
+	fflush(stdout);
+	scanf("%d%d",&Start,&End);
+	Display_Prime_Between_Interval(Start,End);
+
+	return 0;
+}
+
+void Display_Prime_Between_Interval(int num1,int num2)
+{
+	int i, j, flag = TRUE;
+
+
+	for(i = num1; i<=num2; i++)
+	{
+		for(j = 2; j<=i/2; j++)
+		{
+			if((i%j) == 0)
+			{
+				flag = FALSE;
+				break;
+			}
+		}
+
+		if(flag == TRUE)
+		{
+			printf("%d\t",i);
+		}
+		else
+		{
+			flag = TRUE;
+		}
+
+
+
+	}
+
+
+
+}
+

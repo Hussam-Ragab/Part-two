@@ -1,0 +1,38 @@
+
+/*
+ * Write a C function to count the number of 1’s in an unsigned 32-bit integer.
+ *
+ * */
+
+#include <stdio.h>
+
+int Count_Ones(unsigned int num);
+
+int main(void)
+{
+	unsigned int number;
+	printf("enter number\n");
+	fflush(stdout);
+	scanf("%d",&number);
+	Count_Ones(number);
+
+	return 0;
+}
+
+int Count_Ones(unsigned int num)
+{
+	int index,ounter;
+	for(index = 0; index < 32; ++index)
+	{
+		if((num & (1<<index)) == 1)
+		{
+			++counter;
+		}
+	}
+
+
+
+}
+
+
+
